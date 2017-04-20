@@ -1,0 +1,25 @@
+{
+  "name": "FerreiraDev",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Romulo Ferreira"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/romuloufrpe/ferreiradev.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "materialize": "^0.98.2"
+  },
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "sass-flex-mixin": "^1.0.3"
+  }
+}
