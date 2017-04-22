@@ -1,0 +1,38 @@
+.textos
+  text-align: center
+  margin-top: 60px
+.habilidades
+  margin-bottom: 40px
+
+  h2
+    font-size: 20px
+    margin: 40px 0 10px
+
+    i
+      font-size: 30px !important
+
+      &.fa-html5
+          color: $laranja
+      &.fa-css3
+          color: $azul
+      &.fa-wordpress
+          color: #1a98e8
+
+//Barra de habilidades
+@for $i from 0 through 10
+		li.habilidade-#{$i}
+			.barra span
+				width: 10% * $i
+.barra
+    background-color: $cinza-claro
+    +border-radius(120px)
+    display: block
+    width: 100%
+    height: 17px
+    margin: 10px 0
+
+    span
+      display: block
+      height: 100%
+      +border-radius(120px)
+      +gradient(90deg, $vermelho, $azul)

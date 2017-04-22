@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FerreiraDev!</title>
+    <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+     <link rel="stylesheet" href="css/sobre.css">
+  </head>
+  <body>
+
+    <header>
+
+      <nav role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">FerreiraDev!</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Portifolio</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#">Portifolio</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+              <br>
+              <br>
+              <h1 class="header center white-text text-lighten-2">Sobre</h1>
+
+              <div class="row center">
+                <h5 class="header col s12 light white-text">Rômulo Ferreira</h5>
+              </div>
+            </div>
+        </div>
+        <div class="parallax">
+          <img src="imagens/miolo-parallax-n.jpg">
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="sobre">
+        <div class="container">
+          <div class="textos">
+            <p>Estudante de Ciência da Computação pela Universidade Federal de Pernambuco, desenvolvedor Web e mobile.</p>
+          </div>
+        <div class="row">
+          <ul class="habilidades">
+            <li class="habilidade-8 col s6">
+              <h2><i class="fa fa-html5"></i> <strong>HTML5</strong> // 80%
+                <div class="barra"><span></span></div></h2>
+            </li>
+            <li class="habilidade-6 col s6">
+              <h2><i class="fa fa-css3"></i> <strong>CSS3 </strong>// 60%
+                <div class="barra"><span></span></div></h2>
+            </li>
+            <li class="habilidade-8 col s6">
+              <h2><i class="fa fa-wordpress"></i> <strong>Wordpress</strong> // 80%
+                <div class="barra"><span></span></div></h2>
+            </li>
+            <li class="habilidade-5 col s6">
+              <h2><i class="fa fa-git"></i><strong> GIT </strong>// 50%
+                <div class="barra"><span></span></div></h2>
+            </li>
+          </ul>
+      </section>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+    $(".button-collapse").sideNav();
+
+    $(document).ready(function(){
+    $('.parallax').parallax();
+
+    new WOW().init();
+  });
+
+    </script>
+  </body>
+</html>
