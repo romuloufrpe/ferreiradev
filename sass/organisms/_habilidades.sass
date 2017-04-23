@@ -1,23 +1,24 @@
-.textos
-  text-align: center
-  margin-top: 60px
 .habilidades
-  margin-bottom: 40px
+    +clearfix
+    +make-sm-column(10)
+    +make-sm-column-offset(1)
+    margin-bottom: 40px
 
-  h2
-    font-size: 20px
-    margin: 40px 0 10px
+    li
+      +make-sm-column(6)
 
-    i
-      font-size: 30px !important
+      h2
+        font-size: 20px
+        margin: 40px 0 10px
+        i
+          font-size: 38px !important
 
-      &.fa-polymer
-          color: $laranja
-      &.fa-polyme
-          color: $azul
-      &.fa-polym
-          color: #1a98e8
-
+          &.fa-html5
+            color: $laranja
+          &.fa-css3
+            color: $azul
+          &.fa-wordpress
+            color: #1a98e8
 //Barra de habilidades
 @for $i from 0 through 10
 		li.habilidade-#{$i}
@@ -35,4 +36,4 @@
       display: block
       height: 100%
       +border-radius(120px)
-      +gradient(90deg, $vermelho, $azul)
+      +gradient(90deg, $vermelho, $teal-acent-2)
