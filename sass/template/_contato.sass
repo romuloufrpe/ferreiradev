@@ -1,0 +1,57 @@
+.miolo-parallax
+  display: block
+  transform: translate3d(-50%, 248px, 0px)
+
+nav
+  background-color: $branco
+  div
+    a
+      color: $teal-acent-2
+#logo-container
+  color: $teal-acent-2
+
+.direitos
+  text-align: center
+
+.fa
+  color: $branco
+
+
+form
+
+      +clearfix
+      +make-sm-column(8)
+      +make-sm-column-offset(2)
+      margin-top: 40px
+
+
+      .col
+        +make-sm-column(6)
+
+
+      input,
+      textarea
+
+        width: 100%
+        border: 2px solid $cinza-claro
+        padding: 7px
+        text-transform: uppercase
+        +transition(.3s)
+
+        &:hover
+          border-color: $azul
+
+        &:focus
+          border-color: $vermelho
+
+      select
+        height: 37px
+
+      .btn
+        background-color: transparent
+        display: table
+        margin: 0 auto
+
+        .bg-sucess,
+        .bg-danger
+              padding: 7px
